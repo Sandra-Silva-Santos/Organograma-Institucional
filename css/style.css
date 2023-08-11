@@ -1,3 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .genealogy-scroll::-webkit-scrollbar {
     width: 5px;
     height: 8px;
@@ -23,11 +47,10 @@
 
 .genealogy-body {
     display: flex;
-    justify-content: space-between;
-    white-space: wrap;
     overflow-y: auto;
     padding-top: 10px;
     text-align: center;
+    position: relative;
 
 }
 
